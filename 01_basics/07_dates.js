@@ -16,3 +16,5 @@ let myDate = new Date()
 console.log(Math.floor(Date.now()/1000))
 
 console.log(myDate.getUTCDay());
+
+console.log(myDate.getHours());
