@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-color{
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
+    
+</head>
+<body class = 'bg-color'>
+
+<div class="parent">
+    <div class="day">monday</div>
+    <div class="day">tuesday</div>
+    <div class="day">wednesday</div>
+    <div class="day">friday
+
+    </div>
+<div class="day">sunday</div>
+
+    <div class="day">thursday</div>
+</div>
+
+</body>
+<script>
+let list = document.querySelector('.parent')
+console.log(list)
+
+console.log(list.children)
+
+for (let i = 0; i < list.children.length; i++){
+    console.log(list.children[i].innerHTML)
+}
+
+list.children[1].style.color = "orange"
+console.log(list.firstElementChild)
+console.log(list.lastElementChild)
+let day = document.querySelector('.day')
+console.log(day.parentElement)
+console.log(day.nextElementSibling)
+
+console.log("NODES: ", list.childNodes)
+
+
+
+</script>
+
+
+</html>

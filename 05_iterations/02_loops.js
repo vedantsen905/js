@@ -4,7 +4,9 @@
 //     // console.log(`VALUE OF INDEX IS ${index}`);
 //     index = index ** 2
     
-// }
+// }\
+
+
 
 // // let my_arr = ["ironman" , "superman" , "deadpool"]
 // // let rr = 0 
