@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .bg-color{
+        background-color: black;
+        color: aliceblue;
+    }
+</style>
+<body class="bg-color">
+
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+    
+</body>
+<script>
+    function addLanguage(langname){
+
+  let li =   document.createElement('li')
+  li.innerHTML = `${langname}`
+document.querySelector('.language').appendChild(li)}
+
+addLanguage("python")
+addLanguage("c++")
+addLanguage("c")
+
+
+// Edit 
+
+let secondlang = document.querySelector("li:nth-child(2)")
+
+secondlang.innerHTML = "golang"
+
+let newchild = document.createElement('li')
+newchild.textContent = "swift"
+secondlang.replaceWith(newchild)
+
+
+//edit 
+
+const newelement = document.querySelector("li:first-child")
+newelement.outerHTML = 'VEEDANT'
+
+//remove
+
+const order = document.querySelector('li:last-child')
+order.remove()
+
+
+</script>
+</html>
